@@ -10,12 +10,25 @@ namespace While_loopar
     {
         static void Main(string[] args)
         {
-           
-            //Övn 1
-            int i= 0; 
-            while (i++<100)
+            /*
+             //Övn 1
+             int i= 0; 
+             while (i++<100)
+             {
+                 Console.WriteLine(i + " ");
+             }
+             */
+
+            //Övn 2
+            string inmatat = "";
+            while (inmatat != "develooper")
             {
-                Console.WriteLine(i + " ");
+                Console.Write("Skriv in lösenord: ");
+                inmatat = Console.ReadLine();
+                if (inmatat == "develooper")
+                    Console.WriteLine("Korrekt lösenord");
+                else
+                    Console.WriteLine("Inkorrekt lösenord");
             }
         }
     }
