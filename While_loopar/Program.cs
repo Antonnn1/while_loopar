@@ -31,9 +31,19 @@ namespace While_loopar
                  Console.WriteLine("Inkorrekt lösenord");
            }
            */
-            //Övn 2.1
-            int i = 1;
-            while (i++<=100)
+            /*
+             //Övn 2.1
+             int i = 1;
+             while (i++<=100)
+             {
+                 Console.WriteLine(i);
+             }
+             Console.ReadLine();
+             */
+
+            //Övn 2.2
+            int i = 10;
+            while (i-->=1)
             {
                 Console.WriteLine(i);
             }
