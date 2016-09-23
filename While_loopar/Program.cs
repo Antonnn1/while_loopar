@@ -10,8 +10,9 @@ namespace While_loopar
     {
         static void Main(string[] args)
         {
+           
             //Övn 1
-            int i= 0;
+            int i= 0; 
             while (i++<100)
             {
                 Console.WriteLine(i + " ");
