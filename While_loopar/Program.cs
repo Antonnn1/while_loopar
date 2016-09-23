@@ -40,14 +40,22 @@ namespace While_loopar
              }
              Console.ReadLine();
              */
+            /*
+           //Övn 2.2
+           int i = 10;
+           while (i-->=1)
+           {
+               Console.WriteLine(i);
+           }
+           Console.ReadLine();
+           */
 
-            //Övn 2.2
-            int i = 10;
-            while (i-->=1)
+            //Övn 2.3
+            int i = 1;
+            while (i==1)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Hej");
             }
-            Console.ReadLine();
         }
     }
 }
