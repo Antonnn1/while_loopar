@@ -49,12 +49,31 @@ namespace While_loopar
            }
            Console.ReadLine();
            */
+            /*
+             //Övn 2.3
+             int i = 1;
+             while (i==1)
+             {
+                 Console.WriteLine("Hej");
+             }
+             */
 
-            //Övn 2.3
-            int i = 1;
-            while (i==1)
+            //Övn 2.4
+            int inmatat = 0;
+            Random rnd = new Random();
+            int tal = rnd.Next(100);
+            int antalGånger = 0;
+            while (inmatat != tal)
             {
-                Console.WriteLine("Hej");
+                antalGånger++;
+                Console.WriteLine("Gissa ett tal mellan 1 och 100: ");
+                inmatat = int.Parse(Console.ReadLine());
+                if (inmatat > tal)
+                    Console.WriteLine("För högt!");
+                else if (inmatat < tal)
+                    Console.WriteLine("För lågt!");
+                else
+                    Console.WriteLine("Ja! det var " + tal + "." + " Det tog dig " + antalGånger + " gissningar!");
             }
         }
     }
