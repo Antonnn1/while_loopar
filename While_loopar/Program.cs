@@ -58,22 +58,43 @@ namespace While_loopar
              }
              */
 
-            //Övn 2.4
-            int inmatat = 0;
-            Random rnd = new Random();
-            int tal = rnd.Next(100);
-            int antalGånger = 0;
-            while (inmatat != tal)
+            /*
+           //Övn 2.4
+           int inmatat = 0;
+           Random rnd = new Random();
+           int tal = rnd.Next(100);
+           int antalGånger = 0;
+           while (inmatat != tal)
+           {
+               antalGånger++;
+               Console.WriteLine("Gissa ett tal mellan 1 och 100: ");
+               inmatat = int.Parse(Console.ReadLine());
+               if (inmatat > tal)
+                   Console.WriteLine("För högt!");
+               else if (inmatat < tal)
+                   Console.WriteLine("För lågt!");
+               else
+                   Console.WriteLine("Ja! det var " + tal + "." + " Det tog dig " + antalGånger + " gissningar!");
+           }
+           */
+
+            //Övn 2.5
+            int tal1 = 0;
+            int tal2 = 1;
+            while (tal1<1000000 && tal2<1000000)
             {
-                antalGånger++;
-                Console.WriteLine("Gissa ett tal mellan 1 och 100: ");
-                inmatat = int.Parse(Console.ReadLine());
-                if (inmatat > tal)
-                    Console.WriteLine("För högt!");
-                else if (inmatat < tal)
-                    Console.WriteLine("För lågt!");
-                else
-                    Console.WriteLine("Ja! det var " + tal + "." + " Det tog dig " + antalGånger + " gissningar!");
+                if (tal1>=tal2)
+                {
+                    Console.WriteLine(tal2);
+                    tal2 = tal1 + tal2;
+                }
+                else if (tal2 > tal1)
+                {
+                    Console.WriteLine(tal1);
+                    tal1 = tal1 + tal2;
+                    
+                }
+                
             }
         }
     }
