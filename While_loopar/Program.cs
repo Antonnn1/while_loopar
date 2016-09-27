@@ -78,6 +78,7 @@ namespace While_loopar
            }
            */
 
+            /*
             //Övn 2.5
             int tal1 = 0;
             int tal2 = 1;
@@ -93,9 +94,26 @@ namespace While_loopar
                     Console.WriteLine(tal1);
                     tal1 = tal1 + tal2;
                     
-                }
-                
+                }  
             }
+            */
+
+            //Övn 2.6
+            Console.Write("Ange saldo på konto [kr]: ");
+            double inmatats = double.Parse(Console.ReadLine());
+            Console.Write("Ange ränta [%]: ");
+            int inmatatr = int.Parse(Console.ReadLine());
+            Console.Write("Ange ditt mål [kr]: ");
+            int inmatatm = int.Parse(Console.ReadLine());
+
+            int år = 0;
+            while (inmatats < inmatatm)
+            {
+                inmatats = inmatats * (1 + inmatatr / 100.0);
+                år++;
+            }
+            Console.WriteLine("Det tar " + år +" år innan saldot når "+ inmatats);
+
         }
     }
 }
