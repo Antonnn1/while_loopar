@@ -97,7 +97,7 @@ namespace While_loopar
                 }  
             }
             */
-
+            /*
             //Övn 2.6
             Console.Write("Ange saldo på konto [kr]: ");
             double inmatats = double.Parse(Console.ReadLine());
@@ -113,6 +113,16 @@ namespace While_loopar
                 år++;
             }
             Console.WriteLine("Det tar " + år +" år innan saldot når "+ inmatats);
+            */
+
+            //Övn 2.7
+            int år = DateTime.Now.Year;
+            while (år++<2050)
+            {
+                if (DateTime.IsLeapYear(år))
+                    Console.WriteLine(år + " är skottår!");
+
+            }
 
         }
     }
